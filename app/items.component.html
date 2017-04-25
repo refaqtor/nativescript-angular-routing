@@ -1,0 +1,9 @@
+<ActionBar title="Compass Mobile" class="action-bar">
+</ActionBar>
+<StackLayout class="page">
+    <ListView [items]="items" class="list-group">
+        <ng-template let-item="item">
+            <Label [nsRouterLink]="['/item', item.id]" [text]="item.label + ' ' + item.id " class="list-group-item"></Label>
+        </ng-template>
+    </ListView>
+</StackLayout>

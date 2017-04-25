@@ -1,0 +1,9 @@
+<ActionBar title="Details" class="action-bar"></ActionBar>
+<FlexboxLayout flexDirection="column" class="page">
+    <FlexboxLayout class="m-15">
+        <dynamic-form [questions]="questions"></dynamic-form>
+        <!--<Label class="h2" [text]="item.id + '. '"></Label>-->
+        <Label [nsRouterLink]="['/dynamic', item.id]" class="h2" [text]="item.label + 'details'" class="label"></Label>
+    </FlexboxLayout>
+    <Label class="h4" [text]="item.form"></Label>
+</FlexboxLayout>

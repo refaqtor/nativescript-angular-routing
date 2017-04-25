@@ -1,0 +1,8 @@
+{
+    "android": {
+        "v8Flags": "--expose_gc"
+    },
+    "main": "main.js",
+    "name": "psd-compass-mobile",
+    "version": "1.0.0"
+}

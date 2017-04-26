@@ -11,13 +11,9 @@ import { NativeScriptAnimationsModule } from 'nativescript-angular/animations';
 import { NativeScriptFormsModule } from 'nativescript-angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { DataFormComponent } from './data-form.component';
 import { DynamicFormComponent } from "./dynamic.component";
 // import { DynamicFormQuestionComponent } from "./dynamic-form-question.component";
 
-import { FormService } from './form.service';
-import { DataService } from './data.service';
-import { QuestionService } from './question.service';
 
 
 @NgModule({
@@ -25,7 +21,6 @@ import { QuestionService } from './question.service';
         AppComponent
     ],
     imports: [
-        NativeScriptModule,
         NativeScriptModule,
         NativeScriptFormsModule,
         ReactiveFormsModule,
@@ -35,15 +30,12 @@ import { QuestionService } from './question.service';
         AppComponent,
         ItemsComponent,
         ItemDetailComponent,
-        DataFormComponent,
          DynamicFormComponent,
         // DynamicFormQuestionComponent
     ],
     providers: [
         ItemService,
-        FormService,
-        DataService,
-        QuestionService
+
     ],
     schemas: [
         NO_ERRORS_SCHEMA
